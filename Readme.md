@@ -4,9 +4,9 @@ This test is intended to test your SQL proficiency. The tables simulate events t
 goes down a linear progression of pages.
 
 ### How to install:
-- Sync this repo to a \[local folder\] in you computer.
+- Sync this repo to a `[local folder]` in you computer.
 - Download the files inside this [folder](https://drive.google.com/drive/u/2/folders/1T5LNlwLTXpwN13HD_qSLJC4YavSRfGLU)
-and save them to \[local folder\]/docker-entrypoint-initdb.d/data
+and save them to `[local folder]/docker-entrypoint-initdb.d/data/`
 - If you dont have docker [install it.](https://docs.docker.com/get-docker/)
 - Open your terminal (max/linux) or powershell (windows). 
 - Paste ```docker-compose up -d``` in your terminal/powershell window.
