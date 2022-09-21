@@ -1,6 +1,6 @@
 # Data Take Home Assigment 
 
-This test is intended to test you SQL proficiency. The tables simulate events that happen on a website where the user
+This test is intended to test your SQL proficiency. The tables simulate events that happen on a website where the user
 goes down a linear progression of pages.
 
 ### How to install:
