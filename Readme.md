@@ -1,12 +1,5 @@
 # Data Take Home Assigment 
 
-### Assigment Description
-We have provided a single day of data from our sms program and would like you to help analysis it. This is raw data from our live program so there could be missing data or other problems. This assigment should only take 1-2 hours.
-
-
-Everything is contained in this repo and instructions are included on how to run it on your computer. 
-
-Please save all of your work in a single sql file name results.sql and email them to {blah}.
 
 ### How to install:
 - If you dont have docker [install it.](https://docs.docker.com/get-docker/)
@@ -15,15 +8,49 @@ Please save all of your work in a single sql file name results.sql and email the
 - After a minute you should be able to go to [localhost:3000](http://localhost:3000/)
 - Login with user "data@apptness.io" and password "admin"
 - Make sure to select the "Apptness" connection.
-- There should be 5 tables in the public database.
+- There should be 3 tables in the public database.
 
-### Assigment Questions:
-1. How many total messages were sent?
-2. ... by provider?
-3. Which `path_ranking_item` had the most messages?
-4. How many times did users click on links?
-5. How many messages failed? ("type" from sms_provider_response)
-6. What is the most common type of failure? ("description" from sms_provider_response)
+#Table Defination
+###cfe
+- tsid : sessions  
+- created_at : event created time   
+- domain : domain name  
+- fid : flows id (foreign key)    
+- type : type of the event (eg:click is an event)    
+- origin : palce the even occured
+-click_text : user click text
+- diposition : true if duplicate , false if duplicate
+- ocamp_id : page_id
+
+
+###flows
+- cid : campaign_id
+- fid : flows in (primary key)
+- device: user device m : mobile , d :desktop, t:tablet
+- gender : user gender
+
+
+###publishers
+- cid : (primary key)
+- vertical: vertical name
+- affiliate : affilaite name
+- affiliate_id : id assciated to affiliate 
+
+
+
+
+
+##Questions:
+- 1: Which affiliate has the highest full regs count (hint: event type: “FULL”)
+- 2: Calculate CTR by Affiliate and order the final result in descending order by impression
+- 3: Which page_id has the highest partial reg count, break it down by device. (hint: event type: “Partial”)
+- 4: What are the top 10 page_ids that a user views(hint: event type: “IMPRESSION”)  when they start a session
+- 5: Group the Affiliates based on domain_ids and rank domain_ids that have the highest number of affiliates
+
+
+##Bonus Question :
+- 1: Based on the data, give three to five recommendations for the business.
+
 
 
 Credit:
