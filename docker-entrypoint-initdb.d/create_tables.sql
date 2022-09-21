@@ -19,10 +19,8 @@ CREATE TABLE IF NOT EXISTS flows (
 );
 
 CREATE TABLE IF NOT EXISTS publishers (
-    id               int,
-    type               int,
+
     cid              text,
-    domain_id         text,
     vertical           text,
     affiliate            text,
     affiliate_id         text
