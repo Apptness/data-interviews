@@ -42,9 +42,9 @@ and save them to \[local folder\]/docker-entrypoint-initdb.d/data
 - affiliate_id : id assciated to affiliate 
 
 # Questions:
-- 1: Which affiliate has the highest full regs count (hint: event type: “FULL”)
+- 1: Which affiliate has the highest full registration count (hint: event type: “FULL”)
 - 2: Calculate CTR by Affiliate and order the final result in descending order by impression
-- 3: Which page_id has the highest partial reg count, break it down by device. (hint: event type: “Partial”)
+- 3: Which page_id has the highest partial registration count, break it down by device. (hint: event type: “Partial”)
 - 4: What are the top 10 page_ids that a user views(hint: event type: “IMPRESSION”)  when they start a session
 - 5: Group the Affiliates based on domain_ids and rank domain_ids that have the highest number of affiliates
 
